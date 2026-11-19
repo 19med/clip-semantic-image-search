@@ -1,0 +1,43 @@
+# Python environment and local caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local secrets and machine-specific settings
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+
+# Downloaded COCO images and dataset copies
+coco2014/
+train2014/
+val2014/
+test2014/
+images/
+data/
+datasets/
+
+# Generated embeddings, indexes, model weights, and search results
+indexes/
+results/
+*.faiss
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+karpathy_test_image_ids*.json
+ranked_results*.jsonl
+metrics*.json
+
+# Build output and OS files
+build/
+dist/
+*.egg-info/
+.DS_Store
+Thumbs.db

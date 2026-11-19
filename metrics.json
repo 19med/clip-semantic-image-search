@@ -1,0 +1,8 @@
+{
+  "recall_at_1": 0.17421031587365055,
+  "recall_at_5": 0.3603358656537385,
+  "recall_at_10": 0.46313474610155936,
+  "mean_reciprocal_rank": 0.25416817400024116,
+  "median_rank_found": 2,
+  "num_queries": 25010
+}

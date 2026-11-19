@@ -1,0 +1,8 @@
+{
+  "model": "ViT-B/16",
+  "gallery_images": 5000,
+  "recall_at_1": 0.3307876849260296,
+  "recall_at_5": 0.5836465413834466,
+  "recall_at_10": 0.6896441423430628,
+  "num_queries": 25010
+}

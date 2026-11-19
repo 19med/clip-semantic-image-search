@@ -1,0 +1,8 @@
+{
+  "model": "ViT-B/32",
+  "gallery_images": 5000,
+  "recall_at_1": 0.30451819272291086,
+  "recall_at_5": 0.5597361055577769,
+  "recall_at_10": 0.6686125549780088,
+  "num_queries": 25010
+}
