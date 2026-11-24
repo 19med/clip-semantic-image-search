@@ -8,7 +8,7 @@ A text-to-image retrieval project using **COCO 2014** images. We compare a capti
 2. FAISS ranks images by cosine similarity to the text embedding.
 3. The API returns the highest-ranked image IDs, scores and URLs to the website.
 
-The TF-IDF baseline instead searches captions associated with the images. Its implementation is maintained separately; the caption index and TF-IDF source code are **not included** here. The website currently supports live search with the two CLIP models.
+The TF-IDF baseline searches captions associated with gallery images using weighted word overlap. Its implementation, split-preparation script, and baseline documentation are included in the `baseline/` directory. The website currently supports live search with the two CLIP models.
 
 ## Test results
 
@@ -23,6 +23,17 @@ All reported runs searched the same **5,000-image COCO Karpathy test gallery** w
 ¹ The TF-IDF scores were supplied by the other project member. For the final report, confirm that it used the same query IDs and image gallery and excluded the query caption itself from the searchable captions. CLIP read the supplied query texts and image IDs but calculated its **own** rankings. ViT-B/16 scored higher than ViT-B/32 at all three cutoffs.
 
 The CLIP weights are pretrained; this project does not train them from scratch on COCO. The full training, validation and test split and each split's use still need to be documented in the final report. A 10-image smoke test was used to check the program; its scores are not included above.
+
+## Model selection on validation
+
+We selected the final CLIP backbone using the 5,000-image Karpathy validation split with 25,010 caption queries.
+
+| Model | Recall@1 | Recall@5 | Recall@10 |
+|---|---:|---:|---:|
+| CLIP ViT-B/32 | 30.59% | 56.36% | 67.33% |
+| CLIP ViT-B/16 | **32.91%** | **58.66%** | **69.61%** |
+
+ViT-B/16 was selected because it achieved the best validation Recall@1, Recall@5, and Recall@10. Full results and systematic failure analysis are available in [docs/RESULTS.md](docs/RESULTS.md).
 
 ## Repository files
 
