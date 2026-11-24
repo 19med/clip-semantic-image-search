@@ -1,0 +1,308 @@
+{
+  "tfidf_fails_clip_top1": [
+    {
+      "query": "A small dog is curled up on top of the shoes",
+      "ground_truth_image_id": 42,
+      "tfidf_rank": 11,
+      "clip_vit_b16_rank": 1,
+      "tfidf_top_results": [
+        311961,
+        160501,
+        412240,
+        365139,
+        435069
+      ],
+      "clip_top_results": [
+        42,
+        412240,
+        67532,
+        142891,
+        235274
+      ]
+    },
+    {
+      "query": "A black and white shot of a city with a tall skyscraper in the distance.",
+      "ground_truth_image_id": 359,
+      "tfidf_rank": 11,
+      "clip_vit_b16_rank": 1,
+      "tfidf_top_results": [
+        97146,
+        22158,
+        50006,
+        527962,
+        192594
+      ],
+      "clip_top_results": [
+        359,
+        438535,
+        100594,
+        322824,
+        424998
+      ]
+    },
+    {
+      "query": "a toilet seat over a hole in a bath room",
+      "ground_truth_image_id": 636,
+      "tfidf_rank": 11,
+      "clip_vit_b16_rank": 1,
+      "tfidf_top_results": [
+        524637,
+        421471,
+        408859,
+        110601,
+        294763
+      ],
+      "clip_top_results": [
+        636,
+        280619,
+        182056,
+        388528,
+        7288
+      ]
+    },
+    {
+      "query": "Sandwich and a lollipop in a bright orange serving tray sitting on a table.",
+      "ground_truth_image_id": 810,
+      "tfidf_rank": 11,
+      "clip_vit_b16_rank": 1,
+      "tfidf_top_results": [
+        116208,
+        425609,
+        252927,
+        207151,
+        1425
+      ],
+      "clip_top_results": [
+        810,
+        45775,
+        361739,
+        233830,
+        261948
+      ]
+    },
+    {
+      "query": "A person that is dressed up very nicely.",
+      "ground_truth_image_id": 1146,
+      "tfidf_rank": 11,
+      "clip_vit_b16_rank": 1,
+      "tfidf_top_results": [
+        178746,
+        248701,
+        72077,
+        200572,
+        416534
+      ],
+      "clip_top_results": [
+        1146,
+        113890,
+        482160,
+        542388,
+        42201
+      ]
+    }
+  ],
+  "clip_fails_tfidf_top1": [
+    {
+      "query": "Two women sitting at a table looking at another person with a shocked look.",
+      "ground_truth_image_id": 1757,
+      "tfidf_rank": 1,
+      "clip_vit_b16_rank": 11,
+      "tfidf_top_results": [
+        1757,
+        487375,
+        510657,
+        242946,
+        484551
+      ],
+      "clip_top_results": [
+        487375,
+        130826,
+        88252,
+        229688,
+        242946
+      ]
+    },
+    {
+      "query": "A large boat and two smaller boats in a row.",
+      "ground_truth_image_id": 3832,
+      "tfidf_rank": 1,
+      "clip_vit_b16_rank": 11,
+      "tfidf_top_results": [
+        3832,
+        331455,
+        102466,
+        462640,
+        289781
+      ],
+      "clip_top_results": [
+        44910,
+        525763,
+        410612,
+        235791,
+        107216
+      ]
+    },
+    {
+      "query": "A blue and white train is moving on the rails.",
+      "ground_truth_image_id": 6040,
+      "tfidf_rank": 1,
+      "clip_vit_b16_rank": 11,
+      "tfidf_top_results": [
+        6040,
+        140686,
+        578093,
+        155736,
+        25747
+      ],
+      "clip_top_results": [
+        250260,
+        89558,
+        231691,
+        434279,
+        133567
+      ]
+    },
+    {
+      "query": "There is a colorful parachute in the sky.",
+      "ground_truth_image_id": 7784,
+      "tfidf_rank": 1,
+      "clip_vit_b16_rank": 11,
+      "tfidf_top_results": [
+        7784,
+        137265,
+        285645,
+        478282,
+        217951
+      ],
+      "clip_top_results": [
+        502090,
+        318813,
+        162445,
+        534444,
+        82293
+      ]
+    },
+    {
+      "query": "a red and white parachute is in the sky",
+      "ground_truth_image_id": 7784,
+      "tfidf_rank": 1,
+      "clip_vit_b16_rank": 11,
+      "tfidf_top_results": [
+        7784,
+        561014,
+        53454,
+        137265,
+        211487
+      ],
+      "clip_top_results": [
+        144122,
+        318813,
+        279677,
+        452899,
+        162445
+      ]
+    }
+  ],
+  "both_fail_top10": [
+    {
+      "query": "A black and white photograph of a stop light from the street.",
+      "ground_truth_image_id": 359,
+      "tfidf_rank": 11,
+      "clip_vit_b16_rank": 11,
+      "tfidf_top_results": [
+        80117,
+        347535,
+        379332,
+        465069,
+        199050
+      ],
+      "clip_top_results": [
+        499537,
+        568115,
+        269942,
+        109425,
+        411845
+      ]
+    },
+    {
+      "query": "Toilet with indefinite end because of bright light",
+      "ground_truth_image_id": 636,
+      "tfidf_rank": 11,
+      "clip_vit_b16_rank": 11,
+      "tfidf_top_results": [
+        178578,
+        84000,
+        21198,
+        553678,
+        378709
+      ],
+      "clip_top_results": [
+        423971,
+        25014,
+        84064,
+        234413,
+        225867
+      ]
+    },
+    {
+      "query": "A few people riding on an elephants back.",
+      "ground_truth_image_id": 974,
+      "tfidf_rank": 11,
+      "clip_vit_b16_rank": 11,
+      "tfidf_top_results": [
+        147556,
+        179114,
+        107183,
+        148188,
+        132796
+      ],
+      "clip_top_results": [
+        132796,
+        196989,
+        546067,
+        484175,
+        450728
+      ]
+    },
+    {
+      "query": "The children are getting ready to enjoy a piece of cake.",
+      "ground_truth_image_id": 1290,
+      "tfidf_rank": 11,
+      "clip_vit_b16_rank": 11,
+      "tfidf_top_results": [
+        121839,
+        438999,
+        215808,
+        558388,
+        420579
+      ],
+      "clip_top_results": [
+        116341,
+        405249,
+        80369,
+        276036,
+        20598
+      ]
+    },
+    {
+      "query": "A meal is lying on a plate on a table.",
+      "ground_truth_image_id": 1425,
+      "tfidf_rank": 11,
+      "clip_vit_b16_rank": 11,
+      "tfidf_top_results": [
+        545039,
+        55772,
+        113905,
+        316503,
+        520871
+      ],
+      "clip_top_results": [
+        440067,
+        353536,
+        575915,
+        368218,
+        283060
+      ]
+    }
+  ]
+}
